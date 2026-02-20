@@ -1,0 +1,85 @@
+{
+  "Pam": {
+    "1": [
+      {
+        "id": 1,
+        "imageUrl": "https://example.com/doopies/1.png",
+        "traits": {
+          "background": "Yellow",
+          "species": "Pam",
+          "body": "Blue",
+          "accessories": "None",
+          "evolution": 1
+        }
+      }
+    ],
+    "2": [
+      {
+        "id": 1001,
+        "imageUrl": "https://example.com/doopies/1001.png",
+        "traits": {
+          "background": "Blue",
+          "species": "Pam",
+          "body": "Pink",
+          "accessories": "Daisy",
+          "evolution": 2
+        }
+      }
+    ],
+    "3": [
+      {
+        "id": 2001,
+        "imageUrl": "https://example.com/doopies/2001.png",
+        "traits": {
+          "background": "Green",
+          "species": "Pam",
+          "body": "Purple",
+          "accessories": "Poop",
+          "evolution": 3
+        }
+      }
+    ]
+  },
+  "QB": {
+    "1": [
+      {
+        "id": 2,
+        "imageUrl": "https://example.com/doopies/2.png",
+        "traits": {
+          "background": "Blue",
+          "species": "QB",
+          "body": "Pink",
+          "accessories": "None",
+          "evolution": 1
+        }
+      }
+    ],
+    "2": [
+      {
+        "id": 1002,
+        "imageUrl": "https://example.com/doopies/1002.png",
+        "traits": {
+          "background": "Purple",
+          "species": "QB",
+          "body": "Yellow",
+          "accessories": "Daisy",
+          "evolution": 2
+        }
+      }
+    ],
+    "3": [
+      {
+        "id": 2002,
+        "imageUrl": "https://example.com/doopies/2002.png",
+        "traits": {
+          "background": "Lagoon",
+          "species": "QB",
+          "body": "Blue",
+          "accessories": "Poop",
+          "evolution": 3
+        }
+      }
+    ]
+  }
+}
+
