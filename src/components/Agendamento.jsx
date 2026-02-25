@@ -88,7 +88,7 @@ export default function Agendamento() {
   return (
     <section
       id="agendamento"
-      className="relative py-24 sm:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative pt-16 sm:pt-20 pb-16 bg-[#0A0A0A] overflow-hidden"
     >
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#FF6B00]/5 rounded-full blur-3xl pointer-events-none translate-x-1/2 -translate-y-1/2" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#FF6B00]/5 rounded-full blur-3xl pointer-events-none -translate-x-1/2 translate-y-1/2" />

@@ -109,7 +109,7 @@ export default function SobreAtlas() {
             transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             className="relative flex items-center justify-center"
           >
-            <div className="relative w-full max-w-md aspect-[3/4]">
+            <div className="w-full max-w-sm mx-auto">
               {/* Círculo de glow atrás */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-gradient-to-br from-[#FF6B00]/20 to-transparent blur-3xl" />

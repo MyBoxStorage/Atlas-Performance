@@ -155,14 +155,14 @@ export default function SobreBrendon() {
             initial={{ opacity: 0, x: 0 }}
             animate={estaNaViewport ? { opacity: 1, x: 0 } : { opacity: 0, x: 0 }}
             transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
-            className="order-1 lg:order-2 relative"
+            className="order-1 lg:order-2 relative min-h-[400px]"
           >
             <div className="relative">
               {/* Efeito de borda laranja */}
               <div className="absolute -inset-4 bg-gradient-to-br from-[#FF6B00]/30 to-transparent rounded-2xl blur-xl" />
               
               {/* Container da imagem com recorte diagonal */}
-              <div className="relative overflow-hidden rounded-2xl bg-[#1a1a1a]">
+              <div className="relative overflow-hidden rounded-2xl bg-[#1a1a1a] h-full">
                 {/* Overlay gradiente */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent z-10 opacity-60" />
                 <div className="absolute inset-0 bg-gradient-to-r from-[#FF6B00]/10 to-transparent z-10" />
