@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- Meta tags SEO -->
+    <title>Atlas Performance | Personal Trainer Premium - Paraíba do Sul - RJ</title>
+    <meta name="description" content="Treinamento personalizado de alto desempenho para quem leva a evolução a sério. Presencial em Paraíba do Sul ou online para todo o Brasil. Forje a versão mais forte de você." />
+    <meta name="keywords" content="personal trainer, treino personalizado, fitness, musculação, emagrecimento, hipertrofia, Paraíba do Sul, Rio de Janeiro, online coaching" />
+    <meta name="author" content="Atlas Performance" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Meta tags Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://atlasperformance.com.br" />
+    <meta property="og:title" content="Atlas Performance | Personal Trainer Premium" />
+    <meta property="og:description" content="Treinamento personalizado de alto desempenho. Forje a versão mais forte de você." />
+    <meta property="og:image" content="https://atlasperformance.com.br/og-image.jpg" />
+    <meta property="og:locale" content="pt_BR" />
+    
+    <!-- Meta tags Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://atlasperformance.com.br" />
+    <meta name="twitter:title" content="Atlas Performance | Personal Trainer Premium" />
+    <meta name="twitter:description" content="Treinamento personalizado de alto desempenho. Forje a versão mais forte de você." />
+    <meta name="twitter:image" content="https://atlasperformance.com.br/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    
+    <!-- Tema para mobile -->
+    <meta name="theme-color" content="#0A0A0A" />
+    <meta name="msapplication-TileColor" content="#0A0A0A" />
+    
+    <!-- Preconnect para otimização de performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    
+    <!-- Preload das fontes principais -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500;600&display=swap" as="style" />
+    
+    <!-- Importação das fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Estilos críticos inline para evitar flash de conteúdo não estilizado -->
+    <style>
+      /* Previne flash de conteúdo não estilizado */
+      html {
+        background-color: #0A0A0A;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #0A0A0A;
+        color: #F0F0F0;
+        font-family: 'Barlow', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root {
+        min-height: 100vh;
+      }
+      /* Esconde conteúdo até o CSS carregar */
+      .loading {
+        opacity: 0;
+        visibility: hidden;
+      }
+    </style>
+    
+    <!-- Script para remover classe de loading -->
+    <script>
+      // Marca quando o CSS está pronto
+      document.addEventListener('DOMContentLoaded', function() {
+        document.body.classList.remove('loading');
+      });
+    </script>
+  </head>
+  <body class="loading">
+    <!-- Elemento root onde o React será montado -->
+    <div id="root"></div>
+    
+    <!-- Script principal da aplicação -->
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Mensagem para usuários sem JavaScript -->
+    <noscript>
+      <div style="padding: 2rem; text-align: center; background: #0A0A0A; color: #F0F0F0; font-family: sans-serif;">
+        <h1 style="color: #FF6B00; font-size: 2rem; margin-bottom: 1rem;">JavaScript é necessário</h1>
+        <p>Este site requer JavaScript para funcionar corretamente. Por favor, habilite o JavaScript no seu navegador.</p>
+      </div>
+    </noscript>
+  </body>
+</html>

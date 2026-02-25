@@ -1,0 +1,250 @@
+/*
+ * Atlas Performance - Estilos Globais
+ * Todos os estilos e variáveis de design do projeto
+ */
+
+/* Importação das fontes Google */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@400;500;600&display=swap');
+
+/* Variáveis CSS do Design System Atlas Performance */
+:root {
+  /* Paleta de cores principal */
+  --cor-fundo: #0A0A0A;
+  --cor-superficie: #111111;
+  --cor-borda: #1E1E1E;
+  --cor-cinza-medio: #2A2A2A;
+  --cor-texto: #F0F0F0;
+  --cor-texto-suave: #9A9A9A;
+  --cor-acento: #FF6B00;
+  --cor-acento-hover: #E55A00;
+  --cor-acento-glow: rgba(255, 107, 0, 0.15);
+  --cor-gradiente: linear-gradient(135deg, #FF6B00 0%, #FF3D00 100%);
+
+  /* Variáveis do shadcn/ui */
+  --background: 0 0% 4%;
+  --foreground: 0 0% 94%;
+  --card: 0 0% 7%;
+  --card-foreground: 0 0% 94%;
+  --popover: 0 0% 7%;
+  --popover-foreground: 0 0% 94%;
+  --primary: 24 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 94%;
+  --muted: 0 0% 12%;
+  --muted-foreground: 0 0% 60%;
+  --accent: 24 100% 50%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 0 0% 12%;
+  --input: 0 0% 12%;
+  --ring: 24 100% 50%;
+  --radius: 0.5rem;
+}
+
+/* Reset e estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-cinza-medio);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-acento);
+}
+
+/* Seleção de texto */
+::selection {
+  background: var(--cor-acento);
+  color: white;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+/* Classes utilitárias de tipografia */
+.font-display {
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.font-barlow {
+  font-family: 'Barlow', sans-serif;
+}
+
+.font-barlow-condensed {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Gradiente de acento */
+.gradient-acento {
+  background: var(--cor-gradiente);
+}
+
+/* Efeito de glassmorphism */
+.glass {
+  background: rgba(17, 17, 17, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Glow do acento */
+.glow-acento {
+  box-shadow: 0 0 30px var(--cor-acento-glow);
+}
+
+/* Animações de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Efeito de grain sutil no fundo */
+.grain-overlay {
+  position: relative;
+}
+
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.03;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Estilos de foco para acessibilidade */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--cor-acento);
+  outline-offset: 2px;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cor-acento);
+}
+
+/* Imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container responsivo */
+.container-atlas {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-atlas {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-atlas {
+    padding: 0 2rem;
+  }
+}
+
+/* Swiper customização */
+.swiper-pagination-bullet {
+  background: var(--cor-texto-suave) !important;
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--cor-acento) !important;
+  opacity: 1 !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--cor-acento) !important;
+}
+
+/* Animação de pulso para o WhatsApp */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.pulse-ring::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.4);
+  animation: pulse-ring 2s infinite;
+}
