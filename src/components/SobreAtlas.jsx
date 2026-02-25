@@ -18,7 +18,7 @@ export default function SobreAtlas() {
   return (
     <section 
       id="sobre-atlas" 
-      className="relative py-24 sm:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative pt-24 sm:pt-32 pb-16 bg-[#0A0A0A] overflow-hidden"
     >
       {/* Elemento decorativo de fundo */}
       <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">

@@ -31,7 +31,7 @@ export default function SobreBrendon() {
   return (
     <section 
       id="sobre" 
-      className="relative py-24 sm:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative pt-24 sm:pt-32 pb-16 bg-[#0A0A0A] overflow-hidden"
     >
       {/* Elemento decorativo */}
       <div className="absolute top-1/2 left-0 w-96 h-96 -translate-y-1/2 -translate-x-1/2 bg-[#FF6B00]/5 rounded-full blur-3xl pointer-events-none" />
