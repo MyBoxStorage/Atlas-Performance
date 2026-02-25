@@ -60,7 +60,7 @@ const planos = [
     nome: 'CONSULTORIA PREMIUM HÍBRIDA',
     badge: 'ELITE',
     badgeIcon: Crown,
-    badgeCor: 'bg-[#FFD700] text-[#0A0A0A]',
+    badgeCor: 'bg-[#FF6B00] text-white',
     descricao: 'A experiência mais completa: presencial + online integrados em um único método',
     frequencia: null,
     recursos: [
@@ -162,8 +162,8 @@ export default function Servicos() {
                 {/* Badge */}
                 <div className={`absolute top-0 left-0 right-0 py-2 ${plano.badgeCor} text-center`}>
                   <div className="flex items-center justify-center gap-2">
-                    <plano.badgeIcon size={16} className={plano.badgeCor.includes('FFD700') ? 'text-[#0A0A0A]' : 'text-white'} />
-                    <span className={`font-barlow-condensed font-semibold text-xs tracking-wider ${plano.badgeCor.includes('FFD700') ? 'text-[#0A0A0A]' : 'text-white'}`}>
+                    <plano.badgeIcon size={16} className="text-white" />
+                    <span className="font-barlow-condensed font-semibold text-xs tracking-wider text-white">
                       {plano.badge}
                     </span>
                   </div>

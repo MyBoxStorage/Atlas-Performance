@@ -118,12 +118,12 @@ const cardVariants = {
 
 export default function Resultados() {
   const ref = useRef(null);
-  const estaNaViewport = useInView(ref, { once: true, margin: "-100px" });
+  const estaNaViewport = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
 
   return (
     <section 
       id="resultados" 
-      className="relative py-24 sm:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative pt-24 sm:pt-32 pb-16 bg-[#0A0A0A] overflow-hidden"
     >
       {/* Elementos decorativos */}
       <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-[#FF6B00]/5 rounded-full blur-3xl pointer-events-none -translate-x-1/2 -translate-y-1/2" />

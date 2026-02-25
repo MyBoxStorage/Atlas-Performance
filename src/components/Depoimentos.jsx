@@ -69,12 +69,12 @@ const depoimentos = [
 
 export default function Depoimentos() {
   const ref = useRef(null);
-  const estaNaViewport = useInView(ref, { once: true, margin: "-100px" });
+  const estaNaViewport = useInView(ref, { once: true, margin: "0px 0px -50px 0px" });
 
   return (
     <section 
       id="depoimentos" 
-      className="relative py-24 sm:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative pt-24 sm:pt-32 pb-16 bg-[#0A0A0A] overflow-hidden"
     >
       {/* Elementos decorativos */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#FF6B00]/5 rounded-full blur-3xl pointer-events-none" />
@@ -97,12 +97,7 @@ export default function Depoimentos() {
         </motion.div>
 
         {/* Carrossel de depoimentos */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={estaNaViewport ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
-          transition={{ duration: 0.6, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-          className="relative"
-        >
+        <div className="relative">
           {/* Botões de navegação customizados */}
           <button className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-[#111111] border border-[#1E1E1E] rounded-full flex items-center justify-center text-[#F0F0F0] hover:border-[#FF6B00] hover:text-[#FF6B00] transition-colors duration-300 hidden lg:flex">
             <ChevronLeft size={24} />
@@ -184,17 +179,12 @@ export default function Depoimentos() {
               </SwiperSlide>
             ))}
           </Swiper>
-        </motion.div>
+        </div>
 
         {/* Indicador de scroll/swipe para mobile */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={estaNaViewport ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="text-center mt-4 font-barlow text-xs text-[#9A9A9A] lg:hidden"
-        >
+        <p className="text-center mt-4 font-barlow text-xs text-[#9A9A9A] lg:hidden">
           Deslize para ver mais depoimentos
-        </motion.p>
+        </p>
       </div>
     </section>
   );

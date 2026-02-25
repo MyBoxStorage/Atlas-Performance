@@ -78,7 +78,7 @@ export default function Localizacao() {
           >
             <div className="relative rounded-2xl overflow-hidden border border-[#1E1E1E] h-[400px] lg:h-full min-h-[400px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.238!2d-43.298!3d-22.768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ2JzA0LjgiUyA0M8KwMTcnNTIuOCJX!5e0!3m2!1spt-BR!2sbr!4v1609459200000!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14868.123456789!2d-43.3!3d-22.16!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x97742b6b6b6b6b6b%3A0x1234567890abcdef!2sParaíba%20do%20Sul%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1234567890"
                 width="100%"
                 height="100%"
                 allowFullScreen=""
@@ -163,7 +163,7 @@ export default function Localizacao() {
                 href="https://wa.me/5524999990000?text=Olá,%20Brendon!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20planos%20da%20Atlas%20Performance.%20Pode%20me%20ajudar?"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-3 w-full py-4 bg-[#25D366] text-white rounded-xl font-barlow-condensed font-semibold text-base hover:bg-[#128C7E] transition-colors duration-300"
+                className="flex items-center justify-center gap-3 w-full py-4 bg-[#FF6B00] text-white rounded-xl font-barlow-condensed font-semibold text-base hover:bg-[#E55A00] transition-colors duration-300"
               >
                 <Phone size={20} />
                 Falar no WhatsApp

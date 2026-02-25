@@ -69,7 +69,7 @@ export default function Diferenciais() {
   return (
     <section 
       id="metodo" 
-      className="relative py-24 sm:py-32 bg-[#0A0A0A] overflow-hidden"
+      className="relative pt-24 sm:pt-32 pb-16 bg-[#0A0A0A] overflow-hidden"
     >
       {/* Elementos decorativos de fundo */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#FF6B00]/5 rounded-full blur-3xl pointer-events-none translate-x-1/2 -translate-y-1/2" />

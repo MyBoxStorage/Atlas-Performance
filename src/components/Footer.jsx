@@ -55,15 +55,24 @@ export default function Footer() {
           >
             {/* Logo */}
             <a href="#inicio" onClick={(e) => { e.preventDefault(); scrollParaSecao('#inicio'); }} className="flex items-center gap-3 mb-4">
-              <svg viewBox="0 0 60 60" className="w-10 h-10">
+              <svg viewBox="0 0 56 40" className="w-14 h-10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <linearGradient id="gradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: '#FF6B00' }}/>
-                    <stop offset="100%" style={{ stopColor: '#FF3D00' }}/>
+                  <linearGradient id="g1Footer" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="#FF6B00"/>
+                    <stop offset="100%" stopColor="#CC4400"/>
                   </linearGradient>
                 </defs>
-                <path d="M6 51 L21 12 L30 33 L39 12 L54 51 L45 51 L39 36 L30 57 L21 36 L15 51 Z" fill="#F0F0F0"/>
-                <path d="M21 12 L25 23 L30 12 Z" fill="url(#gradFooter)"/>
+                {/* Letra A — triângulo limpo com barra */}
+                <path d="M2 38 L14 4 L20 4 L32 38 L26 38 L21.5 25 L12.5 25 L8 38 Z" fill="#FFFFFF"/>
+                <path d="M14 20 L20 20 L17 11 Z" fill="#FFFFFF"/>
+                <rect x="13" y="22" width="11" height="3" fill="#FFFFFF"/>
+                {/* Acento laranja — ponto acima do A */}
+                <rect x="15.5" y="1" width="3" height="3" rx="0.5" fill="url(#g1Footer)"/>
+                {/* Divisor sutil */}
+                <line x1="34" y1="4" x2="34" y2="38" stroke="#FF6B00" strokeWidth="1" strokeOpacity="0.4"/>
+                {/* Letra P — traço limpo */}
+                <path d="M37 38 L37 4 L48 4 Q56 4 56 14 Q56 24 48 24 L43 24 L43 38 Z" fill="#FFFFFF"/>
+                <path d="M43 9 L43 19 L47 19 Q51 19 51 14 Q51 9 47 9 Z" fill="#0A0A0A"/>
               </svg>
               <span className="font-barlow-condensed font-semibold text-lg tracking-wider text-[#F0F0F0]">
                 ATLAS PERFORMANCE
